@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="RegistryService" />
+        <module name="ApiGateway" />
       </profile>
       <profile name="Annotation profile for Question-Service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -23,6 +24,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ApiGateway" options="-parameters" />
       <module name="Question-Service" options="-parameters" />
       <module name="Quiz-Service" options="-parameters" />
       <module name="RegistryService" options="-parameters" />
